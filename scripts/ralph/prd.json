@@ -2,8 +2,8 @@
   "branchName": "ralph/devinsights-ui-revamp",
   "overview": "Revamp the UI for devinsights.co.in in a new Next.js + Tailwind + shadcn/ui project. Keep all existing text/content the same, but redesign the layout, visual system, and components. Skip /blogs for now. Target production-grade, distinctive design (avoid generic AI aesthetics).",
   "qualityChecks": [
-    "npm run lint",
-    "npm run build"
+    "bun run lint",
+    "bun run build"
   ],
   "userStories": [
     {
@@ -16,7 +16,7 @@
         "Add light/dark theme toggle using next-themes and a small UI control in the header",
         "Create a base layout (header/nav + footer) in App Router",
         "No content copy from DevInsights yet; just scaffold + design tokens",
-        "Commands pass: npm run lint, npm run build"
+        "Commands pass: bun run lint, bun run build"
       ]
     },
     {
@@ -29,7 +29,7 @@
         "Presentation/layout is fully redesigned with a distinctive aesthetic direction",
         "Use shadcn/ui primitives where appropriate (buttons, cards, tabs/accordion if useful)",
         "Responsive across mobile/tablet/desktop",
-        "Commands pass: npm run lint, npm run build"
+        "Commands pass: bun run lint, bun run build"
       ]
     },
     {
@@ -41,7 +41,7 @@
         "Discover and list key pages linked from home (at least: /devinsights-10-years and any core pages like about/services if present)",
         "Create Next.js routes for those pages with placeholder shells (header/footer + page title) so we can fill later",
         "Add a /pages.md doc listing discovered routes and whether implemented",
-        "Commands pass: npm run lint, npm run build"
+        "Commands pass: bun run lint, bun run build"
       ]
     },
     {
@@ -52,8 +52,8 @@
       "acceptanceCriteria": [
         "Add Render deploy notes (render.md) with build/start commands",
         "Ensure Node version pinned via .nvmrc and package.json engines",
-        "App runs with npm start after npm run build",
-        "Commands pass: npm run lint, npm run build"
+        "App runs with bun run start after bun run build",
+        "Commands pass: bun run lint, bun run build"
       ]
     }
   ]
