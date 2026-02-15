@@ -99,7 +99,7 @@ for i in $(seq 1 $MAX_ITERATIONS); do
     # - Use stdin for the prompt.
     # Run from the git repo root if available (recommended), otherwise fall back to current dir.
     PROJECT_ROOT=$(git rev-parse --show-toplevel 2>/dev/null || pwd)
-    OUTPUT=$(codex exec --full-auto -C "$PROJECT_ROOT" - < "$SCRIPT_DIR/AGENT.md" 2>&1) || true
+    OUTPUT=$(codex exec --full-auto -C "$PROJECT_ROOT" - < "$SCRIPT_DIR/AGENT.md" 2>&1 | tee /proc/self/fd/2) || true
   fi
   
   # Check for completion signal
