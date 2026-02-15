@@ -131,6 +131,9 @@ export default function Home() {
           </Link>
 
           <nav className="hidden items-center gap-6 text-sm text-black/70 sm:flex">
+            <Link className="hover:text-black" href="/about-us">
+              About
+            </Link>
             <a className="hover:text-black" href="#who-we-are">
               Who we are
             </a>
