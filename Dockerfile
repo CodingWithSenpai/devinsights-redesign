@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y curl ca-certificates && rm -rf /var/lib
 ENV BUN_INSTALL=/root/.bun
 ENV PATH=$BUN_INSTALL/bin:$PATH
 
-COPY package.json bun.lockb ./
+# Support both lockfile names (bun.lock is text; bun.lockb is binary)
+COPY package.json bun.lock* ./
 RUN bun install --frozen-lockfile
 
 COPY . .
