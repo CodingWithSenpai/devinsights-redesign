@@ -1,0 +1,8 @@
+# Ralph Progress Log
+Started: 2026-02-15
+---
+
+## Codebase Patterns
+- App is Next.js (App Router) in /src/app
+- Use shadcn/ui components under /src/components/ui once initialized
+- Keep content/text identical to https://www.devinsights.co.in/; only revamp layout/visuals
